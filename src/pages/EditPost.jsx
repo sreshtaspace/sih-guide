@@ -17,7 +17,7 @@ export default function EditPost() {
   const fetchPost = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/posts/${id}`
+        `http://https://sih-guide-backend.onrender.com/api/posts/${id}`
       );
 
       setTitle(response.data.title);
@@ -33,7 +33,7 @@ export default function EditPost() {
 
     try {
       await axios.put(
-        `http://localhost:5000/api/posts/${id}`,
+        `http://https://sih-guide-backend.onrender.com/api/posts/${id}`,
         {
           title,
           description,

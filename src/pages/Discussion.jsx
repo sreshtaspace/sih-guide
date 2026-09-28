@@ -17,7 +17,7 @@ function Discussion() {
   const fetchPost = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/posts/${id}`
+        `http://https://sih-guide-backend.onrender.com/api/posts/${id}`
       );
 
       setPost(response.data);
@@ -36,7 +36,7 @@ function Discussion() {
 
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/posts/${id}/answer`,
+        `http://https://sih-guide-backend.onrender.com/api/posts/${id}/answer`,
         {
           author: author || "Anonymous",
           role,
