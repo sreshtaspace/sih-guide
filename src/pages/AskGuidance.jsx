@@ -14,7 +14,7 @@ function AskGuidance() {
   const fetchPosts = async () => {
     try {
       const response = await axios.get(
-        "http://https://sih-guide-backend.onrender.com/api/posts"
+        "https://sih-guide-backend.onrender.com/api/posts"
       );
 
       setPosts(response.data);
@@ -26,7 +26,7 @@ function AskGuidance() {
 
 const deletePost = async (id) => {
   try {
-    await axios.delete(`http://https://sih-guide-backend.onrender.com/api/posts/${id}`);
+    await axios.delete(`https://sih-guide-backend.onrender.com/api/posts/${id}`);
 
     alert("Post deleted successfully!");
 

@@ -25,7 +25,7 @@ function Register() {
 
     try {
       await axios.post(
-        "http://https://sih-guide-backend.onrender.com/api/auth/register",
+        "https://sih-guide-backend.onrender.com/api/auth/register",
         form
       );
 

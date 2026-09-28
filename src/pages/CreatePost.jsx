@@ -25,7 +25,7 @@ function CreatePost() {
 
     try {
       await axios.post(
-        "http://https://sih-guide-backend.onrender.com/api/posts",
+        "https://sih-guide-backend.onrender.com/api/posts",
         form
       );
 

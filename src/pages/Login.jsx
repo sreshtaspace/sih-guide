@@ -23,7 +23,7 @@ function Login() {
 
     try {
       const response = await axios.post(
-        "http://https://sih-guide-backend.onrender.com/api/auth/login",
+        "https://sih-guide-backend.onrender.com/api/auth/login",
         form
       );
 
